@@ -139,11 +139,10 @@ font: color black;
   font-weight: 100;
 }
 .about p {
-  text-align: justify;
-  letter-spacing: 2px;
+  text-align: left;
+  letter-spacing: 0.5px;
   font-size: 20px;
   font-weight: 50;
-  font-kerning: 2px;
 }
 .timeline{
   padding: 20px;
@@ -177,18 +176,18 @@ font: color black;
   font-weight: 100;
 }
 .contact p {
-  text-align: justify;
-  letter-spacing: 2px;
+  text-align: left;
+  letter-spacing: 0.5px;
   font-size: 20px;
   font-weight: 50;
-  font-kerning: 2px;
+  width: 950px;
 }
 #form{
   filter: invert(100%);
+  margin-left: 450px;
 }
 
 .contact li {
-  
   margin: 6px;
   list-style: none;
   left: 50px;
@@ -197,4 +196,18 @@ font: color black;
   color: white;
   font-size: 60px;
   text-decoration: none;
+}
+.contact li a:hover {
+  color: tomato;
+}
+
+.botnav a{
+  color: white;
+  font-size: 40px;
+  text-decoration: none;
+  
+}
+.botnav a:hover{
+  color:tomato;
+  
 }
