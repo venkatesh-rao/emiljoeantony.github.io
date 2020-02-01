@@ -43,9 +43,7 @@ body {
 }
 
 .topnav {
-  
   overflow: hidden;
-  
   top: 0;
 }
 
@@ -213,11 +211,18 @@ font: color black;
 }
 
 @media screen and (max-width: 300px)
-{
+   { 
   .box-img {
   border-radius: 50%;
   width: 90px;
   height: 90px;
   float: right;
+  }
+  .heroText {
+  width: 550px;
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-weight: 50;
+  text-align: left;
 }
 }
