@@ -1,5 +1,5 @@
 /* Style inside the body */
-body {
+/*body {
   width:100%;
   margin: 0;
   padding: 0;
@@ -225,3 +225,15 @@ font: color black;
   }
 
 } 
+@media only screen and (min-width: 992px) {
+  body {
+    background-color: black;
+  }
+
+} 
+@media only screen and (min-width: 1200px) {
+  body {
+    background-color: black;
+  }
+
+}
