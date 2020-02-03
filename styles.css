@@ -219,7 +219,6 @@ font: color black;
 .works {
   width: 90%;
   height: 100%;
-  flex: 70%;
   margin: 20px 5%; 
 }
 .column {
