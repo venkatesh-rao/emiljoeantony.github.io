@@ -212,23 +212,17 @@ font: color black;
   color:tomato;
   
 }
+/*mobile screens*/
 
-@media screen and (max-width: 400px)
+@media screen and (max-width: 480px)
    { 
-  .box-img {
-  border-radius: 50%;
-  width: 90px;
-  height: 90px;
-  float: right;
-  }
-  .about {
-  flex: 70%;
+.works {
+  width: 90%;
   height: 100%;
-  width: 92%x;
-  padding: 40px 120px;
-  margin: 2%;
-  color: white;
-  font-family: 'Century Gothic', sans-serif;
+  flex: 70%;
+  margin: 20px 5%;
+ 
+  
 }
 
 }
