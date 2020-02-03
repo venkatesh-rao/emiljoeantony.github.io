@@ -1,5 +1,6 @@
 /* Style inside the body */
 body {
+  width:100%;
   margin: 0;
   padding: 0;
   background-size: cover;
@@ -46,7 +47,7 @@ body {
   overflow: hidden;
   top: 0;
 }
-
+/* Style the links inside the navigation bar */
 .topnav a {
   float: right;
   color: #f2f2f2;
@@ -56,10 +57,12 @@ body {
   font-size: 17px;
   font-family: 'Century Gothic', sans-serif;
 }
+/* Change the color of links on hover */
 .topnav a:hover {
   background-color: tomato;
   color: black;
 }
+/* Add a color to the active/current link */
 .topnav a.active {
 font: color black;
 }
@@ -83,7 +86,7 @@ font: color black;
   width: 800px;
   height: 2px;
   margin-top: 5%;
-  margin-left: 320px;
+  margin-left: 2%;
 }
 .column {
   float: left;
@@ -210,7 +213,7 @@ font: color black;
   
 }
 
-@media screen and (max-width: 300px)
+@media screen and (max-width: 400px)
    { 
   .box-img {
   border-radius: 50%;
@@ -218,11 +221,14 @@ font: color black;
   height: 90px;
   float: right;
   }
-  .heroText {
-  width: 550px;
-  font-size: 20px;
-  letter-spacing: 2px;
-  font-weight: 50;
-  text-align: left;
+  .about {
+  flex: 70%;
+  height: 100%;
+  width: 92%x;
+  padding: 40px 120px;
+  margin: 2%;
+  color: white;
+  font-family: 'Century Gothic', sans-serif;
 }
+
 }
