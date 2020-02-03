@@ -214,17 +214,8 @@ font: color black;
 }
 /*mobile screens*/
 
-@media screen and (max-width: 480px)
-   { 
-.works {
-  width: 90%;
-  height: 100%;
-  margin: 20px 5%; 
-}
-.column {
-  float: left;
-  width: 90%;
-  
-}
-
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
 }
