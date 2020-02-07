@@ -239,27 +239,27 @@ font: color black;
 
 @media only screen and (max-width: 680px) {
   body {
-    
+    background-color: black;
     width:99%;
   }
 }
 @media only screen and (min-width: 680px) {
   body {
-    
+    background-color: black;
     width:99%;
   }
 /*tablet and pc*/
 } 
 @media only screen and (min-width: 992px) {
   body {
-    
+    background-color: black;
     width:99%;
   }
 
 } 
 @media only screen and (min-width: 1200px) {
   body {
-    
+    background-color: black;
     width:99%;
   }
 
