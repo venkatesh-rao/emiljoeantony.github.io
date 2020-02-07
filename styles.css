@@ -3,8 +3,14 @@ html{
   scrollbar-color: tomato black;
   scrollbar-width: thin;
 }
-
-
+::-webkit-scrollbar{
+  width:5px;
+  background-color: black;
+}
+::-webkit-scrollbar-thumb{
+  background-color: tomato;
+  border-radius: 25px;
+}
 /* Style inside the body */
 /*body {
   width:100%;
