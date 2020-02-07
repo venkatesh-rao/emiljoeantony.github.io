@@ -99,17 +99,19 @@ font: color black;
 .row {
   display: flex;
 }
-
+/*styles inside the gallery/images column*/
 .column {
   flex: 33.33%;
   padding: 5px;
 }
+
 .saturate{
   filter: grayscale(100%);
 }
 .saturate:hover{
   filter: grayscale(0%);
 }
+/* to display the images title on hover*/
 .overlay {
   color: #f1f1f1;
   width: 100%;
@@ -146,6 +148,7 @@ font: color black;
 .timeline{
   padding: 20px;
 }
+
 #t1{
   border-right: 1px solid tomato;
 }
@@ -181,11 +184,14 @@ font: color black;
   font-weight: 50;
   width: 950px;
 }
+/* styles for the google form*/
 #form{
   filter: invert(100%);
   margin-left: 450px;
 }
+/* styles for the google form ends here*/
 
+/* styles for the fontawesome icons for social-networking*/
 .contact li {
   margin: 6px;
   list-style: none;
@@ -199,7 +205,9 @@ font: color black;
 .contact li a:hover {
   color: tomato;
 }
+/* styles for the fontawesome icons for social-networking ends here*/
 
+/* styles for the bottom navigation icon*/
 .botnav a{
   color: white;
   font-size: 40px;
@@ -210,6 +218,9 @@ font: color black;
   color:tomato;
   
 }
+/* styles for the bottom navigation icon ends here*/
+
+
 /*mobile screens*/
 
 @media only screen and (max-width: 680px) {
@@ -221,7 +232,7 @@ font: color black;
   body {
     background-color: tomato;
   }
-
+/*tablet and pc*/
 } 
 @media only screen and (min-width: 992px) {
   body {

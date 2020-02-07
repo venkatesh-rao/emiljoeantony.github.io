@@ -1,41 +1,54 @@
 <!DOCTYPE html>
 <html>
   <head><!--metadata-->
+    <!--custom style sheet-->
+    <link rel="stylesheet" href="styles.css" />
+    <!--favicon-->
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    </head>
+    <!--title-->
+    <title>Personal Profile WebSite</title>
+
+    <!--imported icons from fontawesome-->
     <script
       src="https://kit.fontawesome.com/742462a75c.js"
       crossorigin="anonymous">
-      </script>
-    <link rel="stylesheet" href="styles.css" />
-    <title>Personal Profile WebSite</title>
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-  </head>
+      </script> 
 
   <body>
-    <!--the div top navigation starts here-->
+    <!--top navigation starts here-->
     <div class="topnav">
       <a href="#contact">Contact</a>
       <a href="#About">About</a>
       <a href="#Work">Works</a>
       <a class="active" href="#home">Home</a>
-    </div>
+    </div><!--top navigation ends here-->
+
+    <!--home section starts here, with a class name flex-->
     <div id="home" class="flex">
+      <!--class box contains the profile picture with the class name box-image and herotext-->
       <div class="box">
         <img src="images/mi.jpg" class="box-img" />
         <h1 class="heroText"> Bring your brand to life with my help..</h1>
         <h5>Product Developer</h5>
         <p> Online Portfolio</p>
-        
       </div>
-      <!--the div Works starts here-->
+      <!--home section ends here-->
+
+      <!--works section starts here, with a class name of works and an id name of work-->
       <div id="Work" class="works">
-      
+      <!--this class row contains the title and the dividing line-->
         <div class="row">
           <div class="column"><h2 class="heroText">Works</h2></div>
           <div class="column"><div class="line"></div></div>
         </div>
+
+        <!--this class row contains the the first row of images-->
         <div class="row">
           <div class="column">
-            <img src="images/mita.jpg" alt="exterior" style="width:100%" class="saturate"><div
+            <img src="images/mita.jpg" alt="exterior" style="width:100%" class="saturate">
+            <!--class overlay is used to display the title of the image when hovered upon the image-->
+            <div
               class="overlay"
               >Mita Residence</div
             >
@@ -54,6 +67,8 @@
             ><div class="overlay">Sam Residence</div>
           </div> 
         </div>
+        <!--first row of images ends here-->
+        <!--this class row contains the  second row of images-->
         <div class="row"><div class="column">
           <img src="images/jacuzzi1.jpg" alt="interior" style="width:100%" class="saturate">
           <div class="overlay">Sam Residence</div>
@@ -62,11 +77,13 @@
           <img src="images/Home theatre 2.jpg" alt="interior" style="width:100%" class="saturate">
           <div class="overlay">Sam Residence</div>
         </div></div>
-        
+        <!--second row of images ends here-->
       </div>
-<!--the div About starts here-->
 
+
+<!--About section starts here-->
       <div id="About" class="about">
+        <!--this class row contains the title and the dividing line-->
         <div class="row">
           <div class="column">
             <h2 class="heroText">About</h2>
@@ -75,13 +92,15 @@
             <div class="line"></div>
           </div>
         </div>
+        <!--class row containing the title and the dividing line ends here-->
         <p
           >I'm Emil Joe Antony, a 26y/o developer freshly graduated from the web development department of Makers.studio.
            As a developer, I try to trigger emotions through digital interfaces using code. I also like Photography, Music and Gaming
         </p>
-        <!--the div timeline starts here-->
+        <!--timeline starts here-->
         <div class="timeline">
           <div class="row">
+            <!--separate id given inorder to give a margin for timeline entry-->
             <div id="t1" class="column">
               <h2>2020</h2>
               <p>Started working as a product developer in Makers.Studio.</p>
@@ -109,8 +128,9 @@
       
       
 
-<!--the div contact starts here-->
+<!--contact section starts here-->
       <div id="contact" class="contact">
+        <!--this class row contains the title and the dividing line-->
         <div class="row">
           <div class="column">
             <h2>Contact</h2>
@@ -119,18 +139,20 @@
             <div class="line"></div>
           </div>
         </div>
+        <!--class row containing the title and the dividing line ends here-->
         <p
           >Do you have a project or an idea in your mind that you want to
           develop and need help?? Discover my projects on my social networks and
           feel free to contact me!!</p
         >
+        <!--this row consists the contact form-->
         <div class="row">
           <div class="column"><iframe id="form"
           src="https://docs.google.com/forms/d/e/1FAIpQLScDiQerROLDOx3IQC2W2BwPltZfP4NlwBFMR0ycFdfnX7HhvA/viewform?embedded=true"
-          width="640" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+          width="640" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe><!--imported contact form from google forms-->
         </div>
       
-        
+        <!--social-network buttons imported from fontawesome-->
         <ul>
           <li
             ><a
