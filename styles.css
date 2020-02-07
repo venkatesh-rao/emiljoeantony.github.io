@@ -83,7 +83,7 @@ font: color black;
 }
 .line{
   background-color: tomato;
-  width: 800px;
+  width: 100%;
   height: 2px;
   margin-top: 5%;
   margin-left: 2%;
@@ -226,27 +226,27 @@ font: color black;
 @media only screen and (max-width: 680px) {
   body {
     background-color: lightblue;
-    width:100%;
+    width:99%;
   }
 }
 @media only screen and (min-width: 680px) {
   body {
     background-color: tomato;
-    width:100%;
+    width:99%;
   }
 /*tablet and pc*/
 } 
 @media only screen and (min-width: 992px) {
   body {
     background-color: black;
-    width:100%;
+    width:99%;
   }
 
 } 
 @media only screen and (min-width: 1200px) {
   body {
     background-color: black;
-    width:100%;
+    width:99%;
   }
 
 }
