@@ -1,25 +1,19 @@
-html{
-  overflow-y: scroll;
-  scrollbar-color: tomato black;
-  scrollbar-width: thin;
-}
-::-webkit-scrollbar{
-  width:5px;
+::-webkit-scrollbar {
+  width: 5px;
   background-color: black;
 }
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
   background-color: tomato;
   border-radius: 25px;
 }
 /* Style inside the body */
 /*body {
-  width:100%;
+  width:99%;
   margin: 0;
   padding: 0;
   background-size: cover;
   background-color: black;
-}
-*/
+}*/
 .flex {
   display: flex;
   flex-wrap: wrap;
@@ -32,6 +26,7 @@ html{
   color: white;
   font-family: 'Century Gothic', sans-serif;
   padding: 80px;
+  width: 99%;
 }
 .box-img {
   border-radius: 50%;
@@ -57,13 +52,12 @@ html{
 .topNavigation {
   overflow: hidden;
   margin: 1% 0 0 70%;
-
 }
 /* Style the links inside the navigation bar */
 .topNavigation a {
   color: #f2f2f2;
   text-align: center;
-  padding:  25px 26px;
+  padding: 25px 26px;
   text-decoration: none;
   font-size: 17px;
   font-family: 'Century Gothic', sans-serif;
@@ -72,18 +66,17 @@ html{
 .topNavigation a:hover {
   background-color: tomato;
   color: black;
-  
 }
 /* Add a color to the active/current link */
 .topNavigation a.active {
-font: color black;
+  font: color black;
 }
 
 .works {
   height: 100%;
   flex: 70%;
   margin: 1%;
-  width: 650px;
+  width: 99%;
   padding: 40px 120px;
 }
 .works h2 {
@@ -93,9 +86,9 @@ font: color black;
   font-weight: 100;
   font-family: 'Century Gothic', sans-serif;
 }
-.line{
+.line {
   background-color: tomato;
-  width: 100%;
+  width: 99%;
   height: 2px;
   margin-top: 5%;
   margin-left: 2%;
@@ -106,21 +99,21 @@ font: color black;
   padding: 5px;
 }
 
-
 /*The display property specifies the display behavior of the gallery/images row */
 .row {
   display: flex;
 }
 /*styles inside the gallery/images column*/
 .column {
+  float: left;
   flex: 33.33%;
   padding: 5px;
 }
 
-.saturate{
+.saturate {
   filter: grayscale(100%);
 }
-.saturate:hover{
+.saturate:hover {
   filter: grayscale(0%);
 }
 /* to display the images title on hover*/
@@ -140,7 +133,7 @@ font: color black;
 .about {
   flex: 70%;
   height: 100%;
-  width: 650px;
+  width: 99%;
   padding: 40px 120px;
   margin: 2%;
   color: white;
@@ -157,28 +150,28 @@ font: color black;
   font-size: 20px;
   font-weight: 50;
 }
-.timeline{
+.timeline {
   padding: 20px;
 }
 
-#t1{
+#t1 {
   border-right: 1px solid tomato;
 }
-#marg{
+#marg {
   margin-left: 20px;
   margin-top: 140px;
 }
-#marg2{
+#marg2 {
   margin-left: 20px;
   margin-top: 160px;
 }
-#drop{
+#drop {
   margin-top: 120px;
 }
 .contact {
   flex: 70%;
   height: 100%;
-  width: 650px;
+  width: 99%;
   padding: 40px 120px;
   margin: 2%;
   color: white;
@@ -194,12 +187,11 @@ font: color black;
   letter-spacing: 0.5px;
   font-size: 20px;
   font-weight: 50;
-  width: 950px;
+  width: 99%;
 }
 /* styles for the google form*/
-#form{
+#form {
   filter: invert(100%);
-  margin-left: 450px;
 }
 /* styles for the google form ends here*/
 
@@ -220,47 +212,42 @@ font: color black;
 /* styles for the fontawesome icons for social-networking ends here*/
 
 /* styles for the bottom navigation icon*/
-.contact .botnav a{
+.contact .botnav a {
   float: right;
   color: white;
   font-size: 40px;
   text-decoration: none;
   margin-top: 500%;
-
 }
-.botnav a:hover{
-  color:tomato;
-  
+.botnav a:hover {
+  color: tomato;
 }
 /* styles for the bottom navigation icon ends here*/
-
 
 /*mobile screens*/
 
 @media only screen and (max-width: 680px) {
   body {
     background-color: black;
-    width:99%;
+    width: 99%;
   }
 }
 @media only screen and (min-width: 680px) {
   body {
     background-color: black;
-    width:99%;
+    width: 99%;
   }
-/*tablet and pc*/
-} 
+  /*tablet and pc*/
+}
 @media only screen and (min-width: 992px) {
   body {
     background-color: black;
-    width:99%;
+    width: 99%;
   }
-
-} 
+}
 @media only screen and (min-width: 1200px) {
   body {
     background-color: black;
-    width:99%;
+    width: 99%;
   }
-
 }
