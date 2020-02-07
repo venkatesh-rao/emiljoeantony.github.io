@@ -220,10 +220,11 @@ font: color black;
 
 /* styles for the bottom navigation icon*/
 .botnav a{
+  float: right;
   color: white;
   font-size: 40px;
   text-decoration: none;
-  top: 90%;
+  
   
 }
 .botnav a:hover{
