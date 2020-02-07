@@ -1,3 +1,10 @@
+html{
+  overflow-y: scroll;
+  scrollbar-color: tomato black;
+  scrollbar-width: thin;
+}
+
+
 /* Style inside the body */
 /*body {
   width:100%;
@@ -210,6 +217,7 @@ font: color black;
   color: white;
   font-size: 40px;
   text-decoration: none;
+  top: 90%;
   
 }
 .botnav a:hover{
