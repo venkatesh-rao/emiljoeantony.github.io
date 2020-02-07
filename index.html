@@ -17,20 +17,19 @@
 
   <body>
     <!--top navigation starts here-->
-    <div class="topNavigation">
-      <a class="active" href="#Home">Home</a>
-      <a href="#Work">Works</a>
-      <a href="#About">About</a>
-      <a href="#Contact">Contact</a>
-      
-      
-      
-    </div><!--top navigation ends here-->
+    <!--top navigation ends here-->
 
     <!--home section starts here, with a class name flex-->
-    <div id="Home" class="flex">
+    <div id="home" class="flex">
+      <div class="topNavigation">
+        <a class="active" href="#home">Home</a>
+        <a href="#Work">Works</a>
+        <a href="#About">About</a>
+        <a href="#Contact">Contact</a>
+      </div>
       <!--class box contains the profile picture with the class name box-image and herotext-->
       <div class="box">
+        
         <img src="images/mi.jpg" class="box-img" />
         <h1 class="heroText"> Bring your brand to life with my help..</h1>
         <h5>Product Developer</h5>
@@ -148,6 +147,7 @@
           develop and need help?? Discover my projects on my social networks and
           feel free to contact me!!</p
         >
+        
         <!--this row consists the contact form-->
         <div class="row">
           <div class="column"><iframe id="form"
@@ -178,11 +178,12 @@
           <li
             ><a href="https://twitter.com/" class="fab fa-twitter-square"></a
           ></li>
+          <li><!--for the navigation icon/bottom to top-->
+          <div class="botnav"><a href="#home" class="fas fa-arrow-circle-up"></a></div></li>
         </ul>
         
       </div>
-    <!--for the navigation icon/bottom to top-->
-    <div class="botnav"><a href="#Home" class="fas fa-arrow-circle-up"></a></div>
+    
     </div>
   </body>
 </html>

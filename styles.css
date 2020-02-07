@@ -56,7 +56,7 @@ html{
 }
 .topNavigation {
   overflow: hidden;
-  margin: 2% 0 0 70%;
+  margin: 1% 0 0 70%;
 
 }
 /* Style the links inside the navigation bar */
@@ -72,6 +72,7 @@ html{
 .topNavigation a:hover {
   background-color: tomato;
   color: black;
+  
 }
 /* Add a color to the active/current link */
 .topNavigation a.active {
@@ -219,13 +220,13 @@ font: color black;
 /* styles for the fontawesome icons for social-networking ends here*/
 
 /* styles for the bottom navigation icon*/
-.botnav a{
+.contact .botnav a{
   float: right;
   color: white;
   font-size: 40px;
   text-decoration: none;
-  
-  
+  margin-top: 500%;
+
 }
 .botnav a:hover{
   color:tomato;
@@ -238,27 +239,27 @@ font: color black;
 
 @media only screen and (max-width: 680px) {
   body {
-    background-color: lightblue;
+    
     width:99%;
   }
 }
 @media only screen and (min-width: 680px) {
   body {
-    background-color: tomato;
+    
     width:99%;
   }
 /*tablet and pc*/
 } 
 @media only screen and (min-width: 992px) {
   body {
-    background-color: black;
+    
     width:99%;
   }
 
 } 
 @media only screen and (min-width: 1200px) {
   body {
-    background-color: black;
+    
     width:99%;
   }
 
