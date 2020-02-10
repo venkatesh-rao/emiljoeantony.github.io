@@ -253,17 +253,18 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    margin-top: 10px;
+    margin-top: 50px;
     margin-right: 80px;
   }
   .topNavigation a {
     font-size: calc(20px + (30 - 20) * ((100vw - 300px) / (1600 - 300)));
   }
-  .column {
-    float: left; /*property is used for positioning and formatting content*/
+  /*property is used for positioning and formatting content*/
+   .column {
+    float: left; 
     width: 33.3%;
     padding: 5px;
-  }
+  } 
   .row.gallerySplit {
     flex-direction: row;
   }
@@ -274,8 +275,20 @@ body {
     text-align: justify;
     color: white;
     font-family: 'Century Gothic', sans-serif;
-    padding: 80px;
+    padding: 60px;
     width: 100vw;
+  }
+  .about{
+    padding: 60px;
+    padding-top: 20px;
+  }
+  .works{
+    padding: 60px;
+    padding-top: 20px;
+  }
+  .contact{
+    padding: 60px;
+    padding-top: 20px;
   }
   .box-img {
     border-radius: 50%;
