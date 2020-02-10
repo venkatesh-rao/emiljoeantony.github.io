@@ -19,7 +19,8 @@ body {
   flex-wrap: wrap;
 }
 .box {
-  flex: 70%;
+  display: flex;
+  flex-direction: column;
   height: 100%;
   text-align: justify;
   color: white;
@@ -29,15 +30,12 @@ body {
 }
 .box-img {
   border-radius: 50%;
-  width: 45%;
-  height: 45%;
-  float: right;
+  max-width: 80vw;
 }
 .heroText {
-  width: 40%;
+  width: 80vw;
   font-size: calc(80px + (100 - 80) * ((100vw - 300px) / (1600 - 300)));
   letter-spacing: 2px;
-  text-align: left;
 }
 .box h6 {
   font-size: calc(30px + (30 - 14) * ((100vw - 300px) / (1600 - 300)));
@@ -78,7 +76,7 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-.row.gallerySplit{
+.row.gallerySplit {
   flex-direction: column;
 }
 
@@ -105,7 +103,6 @@ body {
   float: left; /*property is used for positioning and formatting content*/
   width: 100%;
   padding: 5px;
-  
 }
 
 /*The display property specifies the display behavior of the gallery/images row */
@@ -247,43 +244,53 @@ body {
 /*mobile screens*/
 
 @media only screen and (max-width: 680px) {
-  .box-img {
-    justify-content: center;
-  }
-  
 }
 @media only screen and (min-width: 680px) {
-  .box-img {
-    justify-content: center;
-  }
-  
- 
 }
 /*tablet and pc*/
 @media only screen and (min-width: 992px) {
-   .topNavigation{
+  .topNavigation {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     margin-top: 10px;
     margin-right: 80px;
-
   }
-  .topNavigation a{
+  .topNavigation a {
     font-size: calc(20px + (30 - 20) * ((100vw - 300px) / (1600 - 300)));
   }
   .column {
-  float: left; /*property is used for positioning and formatting content*/
-  width: 33.3%;
-  padding: 5px;
-}
-.row.gallerySplit{
-  flex-direction: row;
-}
+    float: left; /*property is used for positioning and formatting content*/
+    width: 33.3%;
+    padding: 5px;
+  }
+  .row.gallerySplit {
+    flex-direction: row;
+  }
+  .box {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    text-align: justify;
+    color: white;
+    font-family: 'Century Gothic', sans-serif;
+    padding: 80px;
+    width: 100vw;
+  }
+  .box-img {
+    border-radius: 50%;
+    width: 45%;
+    height: 45%;
+    float: right;
+  }
+  .heroText {
+    width: 40%;
+    font-size: calc(80px + (100 - 80) * ((100vw - 300px) / (1600 - 300)));
+    letter-spacing: 2px;
+    text-align: left;
+  }
 }
 @media only screen and (min-width: 1200px) {
-   
 }
 @media only screen and (min-width: 1600px) {
-   
 }
