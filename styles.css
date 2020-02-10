@@ -289,6 +289,12 @@ body {
     letter-spacing: 2px;
     text-align: left;
   }
+  .about p{
+    font-size: calc(15px + (20 - 15) * ((100vw - 300px) / (1600 - 300)));
+  }
+  .contact p{
+    font-size: calc(15px + (20 - 15) * ((100vw - 300px) / (1600 - 300)));
+  }
 }
 @media only screen and (min-width: 1200px) {
 }
