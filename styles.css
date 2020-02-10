@@ -7,13 +7,13 @@
   border-radius: 25px;
 }
 /* Style inside the body */
-/*body {
-  width:99%;
+body {
+  width: 100%;
   margin: 0;
   padding: 0;
   background-size: cover;
   background-color: black;
-}*/
+}
 .flex {
   display: flex;
   flex-wrap: wrap;
@@ -21,28 +21,26 @@
 .box {
   flex: 70%;
   height: 100%;
-  margin: 2%;
   text-align: justify;
   color: white;
   font-family: 'Century Gothic', sans-serif;
   padding: 80px;
-  width: 99%;
+  width: 100vw;
 }
 .box-img {
   border-radius: 50%;
-  width: 600px;
-  height: 600px;
+  width: 45%;
+  height: 45%;
   float: right;
 }
 .heroText {
-  width: 550px;
-  font-size: 100px;
+  width: 40%;
+  font-size: calc(80px + (100 - 80) * ((100vw - 300px) / (1600 - 300)));
   letter-spacing: 2px;
-  font-weight: 100;
   text-align: left;
 }
-.box h5 {
-  font-size: 20px;
+.box h6 {
+  font-size: calc(30px + (30 - 14) * ((100vw - 300px) / (1600 - 300)));
   letter-spacing: 3px;
   color: tomato;
 }
@@ -50,16 +48,21 @@
   text-align: center;
 }
 .topNavigation {
-  overflow: hidden;
-  margin: 1% 0 0 70%;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 50px;
 }
 /* Style the links inside the navigation bar */
 .topNavigation a {
   color: #f2f2f2;
   text-align: center;
-  padding: 25px 26px;
+  margin-right: 20px;
+  margin-left: 20px;
+  padding: 0 20px 0 20px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: calc(40px + (30 - 20) * ((100vw - 300px) / (1600 - 300)));
   font-family: 'Century Gothic', sans-serif;
 }
 /* Change the color of links on hover */
@@ -71,17 +74,23 @@
 .topNavigation a.active {
   font: color black;
 }
+.row.workHead {
+  justify-content: space-between;
+  align-items: center;
+}
+.row.gallerySplit{
+  flex-direction: column;
+}
 
 .works {
   height: 100%;
   flex: 70%;
-  margin: 1%;
-  width: 99%;
-  padding: 40px 120px;
+  width: 100vw;
+  padding: 80px;
 }
 .works h2 {
   color: white;
-  font-size: 40px;
+  font-size: 60px;
   letter-spacing: 4px;
   font-weight: 100;
   font-family: 'Century Gothic', sans-serif;
@@ -90,13 +99,13 @@
   background-color: tomato;
   width: 99%;
   height: 2px;
-  margin-top: 5%;
-  margin-left: 2%;
+  align-self: center;
 }
 .column {
   float: left; /*property is used for positioning and formatting content*/
-  width: 33.33%;
+  width: 100%;
   padding: 5px;
+  
 }
 
 /*The display property specifies the display behavior of the gallery/images row */
@@ -104,11 +113,6 @@
   display: flex;
 }
 /*styles inside the gallery/images column*/
-.column {
-  float: left;
-  flex: 33.33%;
-  padding: 5px;
-}
 
 .saturate {
   filter: grayscale(100%);
@@ -123,37 +127,47 @@
   transition: 0.5s ease;
   opacity: 0;
   color: tomato;
-  font-size: 15px;
+  font-size: calc(15px + (20 - 15) * ((100vw - 300px) / (1600 - 300)));
   text-align: center;
   font-family: 'Century Gothic', sans-serif;
 }
 .column:hover .overlay {
   opacity: 1;
 }
+.row.aboutHead {
+  justify-content: space-between;
+  align-items: center;
+}
 .about {
   flex: 70%;
   height: 100%;
-  width: 99%;
-  padding: 40px 120px;
-  margin: 2%;
+  width: 100vw;
+  padding: 80px;
   color: white;
   font-family: 'Century Gothic', sans-serif;
 }
 .about h2 {
-  font-size: 40px;
+  font-size: 60px;
   letter-spacing: 4px;
   font-weight: 100;
 }
 .about p {
   text-align: left;
   letter-spacing: 0.5px;
-  font-size: 20px;
-  font-weight: 50;
+  font-size: calc(30px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+  font-weight: 100;
 }
 .timeline {
   padding: 20px;
+  font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+  justify-content: space-between;
 }
-
+.timeline.column {
+  width: 50%;
+}
+.row.timelineSplit {
+  justify-content: space-evenly;
+}
 #t1 {
   border-right: 1px solid tomato;
 }
@@ -168,26 +182,30 @@
 #drop {
   margin-top: 120px;
 }
+.row.contactHead {
+  justify-content: space-between;
+  align-items: center;
+}
 .contact {
   flex: 70%;
   height: 100%;
-  width: 99%;
-  padding: 40px 120px;
-  margin: 2%;
+  width: 100vw;
+  padding: 80px;
+
   color: white;
   font-family: 'Century Gothic', sans-serif;
 }
 .contact h2 {
-  font-size: 40px;
+  font-size: 60px;
   letter-spacing: 4px;
   font-weight: 100;
 }
 .contact p {
   text-align: left;
   letter-spacing: 0.5px;
-  font-size: 20px;
+  font-size: calc(30px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
   font-weight: 50;
-  width: 99%;
+  width: 100%;
 }
 /* styles for the google form*/
 #form {
@@ -196,10 +214,12 @@
 /* styles for the google form ends here*/
 
 /* styles for the fontawesome icons for social-networking*/
+.row.contactSplit {
+  justify-content: space-between;
+}
 .contact li {
   margin: 6px;
   list-style: none;
-  left: 50px;
 }
 .contact li a {
   color: white;
@@ -217,7 +237,7 @@
   color: white;
   font-size: 40px;
   text-decoration: none;
-  margin-top: 500%;
+  margin-top: 15vw;
 }
 .botnav a:hover {
   color: tomato;
@@ -227,27 +247,43 @@
 /*mobile screens*/
 
 @media only screen and (max-width: 680px) {
-  body {
-    background-color: black;
-    width: 99%;
+  .box-img {
+    justify-content: center;
   }
+  
 }
 @media only screen and (min-width: 680px) {
-  body {
-    background-color: black;
-    width: 99%;
+  .box-img {
+    justify-content: center;
   }
-  /*tablet and pc*/
+  
+ 
 }
+/*tablet and pc*/
 @media only screen and (min-width: 992px) {
-  body {
-    background-color: black;
-    width: 99%;
+   .topNavigation{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 10px;
+    margin-right: 80px;
+
   }
+  .topNavigation a{
+    font-size: calc(20px + (30 - 20) * ((100vw - 300px) / (1600 - 300)));
+  }
+  .column {
+  float: left; /*property is used for positioning and formatting content*/
+  width: 33.3%;
+  padding: 5px;
+}
+.row.gallerySplit{
+  flex-direction: row;
+}
 }
 @media only screen and (min-width: 1200px) {
-  body {
-    background-color: black;
-    width: 99%;
-  }
+   
+}
+@media only screen and (min-width: 1600px) {
+   
 }
