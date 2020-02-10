@@ -22,7 +22,7 @@ body {
   display: flex;
   flex-direction: column;
   height: 100%;
-  text-align: justify;
+  text-align: start;
   color: white;
   font-family: 'Century Gothic', sans-serif;
   padding: 80px;
