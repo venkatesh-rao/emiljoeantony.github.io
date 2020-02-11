@@ -6,11 +6,17 @@ body {
   margin: 0;
   padding: 0;
   background-color: #000;
+  color: #fff;
   font-family: 'Century Gothic', sans-serif;
   height: 100vh;
   width: 100vw;
   overflow-y: auto;
   overflow-x: hidden;
+}
+
+body.dark {
+  background-color: #fff;
+  color: #000;
 }
 
 .top-nav {
@@ -57,8 +63,8 @@ body {
 }
 
 .hero-img {
-  max-width: 50vh;
-  max-height: 50vh;
+  max-width: 45vh;
+  max-height: 45vh;
   order: 1;
   width: 100%;
   height: auto;
@@ -173,9 +179,17 @@ body {
   text-decoration: none;
 }
 
+body.dark .fab {
+  color: #000
+}
+
 #form {
   margin-top: 100px;
   filter: invert(100%);
+}
+
+body.dark #form {
+  filter: invert(0%);
 }
 
 .social-icons {
@@ -198,6 +212,10 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+}
+
+body.dark .text {
+  color: #000 !important;
 }
 
 @media only screen and (min-width: 1100px) {
